@@ -7,7 +7,7 @@
   "tags": ["mcp", "quota", "usage", "claude", "kimi", "zai", "privacy", "local-first"],
   "install": {
     "command": "npx",
-    "args": ["-y", "quota-dashboard-mcp@latest"]
+    "args": ["-y", "ryan-knowone/quota-dashboard-mcp"]
   },
   "env": {
     "CLAUDE_TOKEN": { "description": "OAuth token from Claude Code browser session", "required": false },

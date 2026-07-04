@@ -7,7 +7,7 @@ install:
   command: npx
   args:
     - -y
-    - quota-dashboard-mcp@latest
+    - ryan-knowone/quota-dashboard-mcp
 env:
   CLAUDE_TOKEN:
     description: OAuth token from an authenticated Claude Code browser session
