@@ -95,7 +95,9 @@ Then set `CLAUDE_TOKEN` to that value.
 
 ### Kimi
 
-Use a **platform API key** from [platform.moonshot.cn](https://platform.moonshot.cn), not the Claude Code proxy key. Set it as `KIMI_TOKEN`.
+Use a platform API key from [platform.moonshot.cn](https://platform.moonshot.cn). Set it as `KIMI_TOKEN`.
+
+In practice, the same `sk-kimi-...` key used by Claude Code's Anthropic-compatible proxy also works for the Kimi usage endpoint. If your proxy key returns `Invalid Authentication`, create a dedicated platform API key from `platform.moonshot.cn`.
 
 ### Z.ai
 
