@@ -1,0 +1,45 @@
+{
+  "name": "quota-dashboard-mcp",
+  "version": "1.0.0",
+  "description": "Local MCP server for real-time AI subscription quota across Claude Code Max, Kimi, and Z.ai",
+  "main": "dist/index.js",
+  "type": "module",
+  "bin": {
+    "quota-dashboard-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist/**/*",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js",
+    "prepare": "npm run build",
+    "test:mcp": "./scripts/test-mcp.sh"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "quota",
+    "claude",
+    "kimi",
+    "z.ai",
+    "ai",
+    "usage"
+  ],
+  "author": "Ryan Knowone",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.8.0"
+  }
+}
