@@ -10,7 +10,10 @@
   "files": [
     "dist/**/*",
     "README.md",
-    "LICENSE"
+    "LICENSE",
+    "server.json",
+    "smithery.yaml",
+    "glama.json"
   ],
   "scripts": {
     "build": "tsc",

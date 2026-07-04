@@ -1,0 +1,20 @@
+name: quota-dashboard-mcp
+description: Local MCP server for real-time AI subscription quota across Claude Code Max, Kimi, and Z.ai.
+repository: https://github.com/ryan-knowone/quota-dashboard-mcp
+license: MIT
+transport: stdio
+install:
+  command: npx
+  args:
+    - -y
+    - quota-dashboard-mcp@latest
+env:
+  CLAUDE_TOKEN:
+    description: OAuth token from an authenticated Claude Code browser session
+    required: false
+  KIMI_TOKEN:
+    description: Platform API key from platform.moonshot.cn
+    required: false
+  ZAI_TOKEN:
+    description: Bearer token from your Z.ai account/dashboard
+    required: false
