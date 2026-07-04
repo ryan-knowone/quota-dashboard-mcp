@@ -21,6 +21,20 @@ Tokens stay on your machine: they are read from environment variables at call ti
 - Node.js ≥ 18
 - A bearer token for each provider you want to query (see **Token setup** below)
 
+### One-line install
+
+The package is installable directly from GitHub today (no npm account required):
+
+```bash
+npx -y ryan-knowone/quota-dashboard-mcp
+```
+
+Once the package is published to npm, the canonical command will be:
+
+```bash
+npx -y quota-dashboard-mcp@latest
+```
+
 ### Claude Code
 
 Add the server to your Claude Code config (`~/.claude/CONFIG.json` or via `/mcp`):
@@ -30,7 +44,7 @@ Add the server to your Claude Code config (`~/.claude/CONFIG.json` or via `/mcp`
   "mcpServers": {
     "quota-dashboard": {
       "command": "npx",
-      "args": ["-y", "quota-dashboard-mcp@latest"],
+      "args": ["-y", "ryan-knowone/quota-dashboard-mcp"],
       "env": {
         "CLAUDE_TOKEN": "your_claude_oauth_token",
         "KIMI_TOKEN": "your_kimi_platform_api_key",
@@ -50,7 +64,7 @@ Open **Cursor Settings → MCP → Add new MCP server**, then paste:
 - **Command:**
 
 ```bash
-env CLAUDE_TOKEN=your_claude_oauth_token KIMI_TOKEN=your_kimi_platform_api_key ZAI_TOKEN=your_zai_bearer_token npx -y quota-dashboard-mcp@latest
+env CLAUDE_TOKEN=your_claude_oauth_token KIMI_TOKEN=your_kimi_platform_api_key ZAI_TOKEN=your_zai_bearer_token npx -y ryan-knowone/quota-dashboard-mcp
 ```
 
 ### VS Code
@@ -63,7 +77,7 @@ Add to your VS Code `settings.json` (requires the [Claude AI extension](https://
     "servers": {
       "quota-dashboard": {
         "command": "npx",
-        "args": ["-y", "quota-dashboard-mcp@latest"],
+        "args": ["-y", "ryan-knowone/quota-dashboard-mcp"],
         "env": {
           "CLAUDE_TOKEN": "your_claude_oauth_token",
           "KIMI_TOKEN": "your_kimi_platform_api_key",
