@@ -154,6 +154,14 @@ With the server running over stdio, send a JSON-RPC `tools/call` request:
 - Tokens are **never written to disk** (other than the env vars you already manage).
 - Tokens and usage data are **never sent to telemetry** or any third party except the provider's own API.
 
+## Support
+
+This is an independent open-source project. If it saves you from an unexpected quota outage, you can tip ETH/USDC on Base:
+
+`0x1e2D7F8715E8180816c0236A5c4F21596C5b9c9e`
+
+Issues and PRs are welcome — provider endpoints change often and community maintenance keeps the tool accurate.
+
 ## License
 
 MIT
